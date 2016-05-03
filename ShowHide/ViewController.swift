@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var background: UIImageView!
+    
+    @IBOutlet weak var button: UIButton!
+    
+    @IBAction func Button(sender: AnyObject) {
+        background.hidden = false
+        button.titleLabel!.textColor = UIColor.brownColor()
+        button.titleLabel!.text = "پنهان کردن زمینه"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
